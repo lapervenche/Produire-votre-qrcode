@@ -1,0 +1,41 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <title>Générer un QR-Code</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="container">
+            <div class="input-container">
+                <!-- Boite de l'aide -->
+                <center><button id="afficheMasque" style="min-width: 130px;margin-top: 0px;padding: 0px;margin-bottom: 15px;">Aide❔</button></center>
+                <br>
+               <div id="text">
+                  1- Cliquez dans la boite de dialogue Boite de dialogue "<b style="color: #4d4dec;">🖊 Votre Texte ou Url ici.</b>" ci dessous.
+                  <br>2- Ecrivez dedans votre texte à inclure dans l'image de votre qr-code.  
+                  <br>3- Cliquez ensuite sur le bouton "<b style="color: #4d4dec;">Générer l'image QR-Code</b>".
+                  <br>4- Vous pourrez alors visualiser l'image du qr-code généré en dessous de cette boite, revenir
+                  en arrière pour modifier votre texte si celui ci ne vous convient pas.
+                  <br><br>Télécharger l'image de votre QR-Code
+                  <br>Cliquez sur le bouton "<b style="color: #4d4dec;">Télécharger l'image</b>" pour que celle ci soit enregistrée en tant que fichier image dans un dossier sur votre pc.
+               </div>
+                <!-- Boite pour générer le qrcode -->
+                <center><input type="text" id="input" placeholder="🖊 Votre Texte ou Url ici." autocomplete="off"/></center>
+                <center><button id="mabtn" onclick="generate()">Générer l'image QR-Code</button></center>
+            </div>
+            <!-- Bouton de téléchargement d'image -->
+            <center><div class="qr-code"></div></center>
+            <center><button id="maindwnbtn" ><a href="#" id="mybutton" download="qr">Télécharger l'image</a></button></center>
+    </div>
+    <!-- Scripts principaux -->
+    <script src="js/2.js"></script>
+    <script src="js/FileSaver.min.js"></script>
+    <script src="js/alerte.js"></script>
+    <script src="js/aide.js"></script>
+
+</body>
+</html>
